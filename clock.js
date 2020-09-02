@@ -34,8 +34,8 @@ function clock() {
     second = `0${second}`;
   //Changes the html element time to display the time
   time.innerHTML = `${hour}:${minute}:${second} ${am}`;
-  //Check to see if the time has changed every 10 milliseconds
-  setInterval(clock, 10);
+  //Check to see if the time has changed every 50 milliseconds
+  setInterval(clock, 50);
 }
 //Calls the clock function
 clock();

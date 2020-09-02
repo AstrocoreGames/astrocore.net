@@ -37,14 +37,6 @@ li {
   border: 2px solid white;
 }
 
-li:hover {
-  background-color: #2C2F33;
-}
-
-.active:hover {
-  background-color: #275edc;
-}
-
 .title {
   text-decoration: underline;
 }
@@ -67,14 +59,19 @@ li:hover {
 }
 
 /*Changes the look of elements when highlighted*/
+body::selection {
+  color: white;
+  background: #A93226;
+}
+
 p::selection {
   color:white;
   background: #A93226;
 }
 
-h3::selection {
+b::selection {
   color: white;
-  background:#A93226;
+  background: #A93226;
 }
 
 h1::selection {
@@ -82,14 +79,14 @@ h1::selection {
   background: #A93226;
 }
 
-body::selection {
+h2::selection {
   color: white;
   background: #A93226;
 }
 
-h2::selection {
+h3::selection {
   color: white;
-  background: #A93226;
+  background:#A93226;
 }
 
 h4::selection {
@@ -107,15 +104,6 @@ li::selection {
   background: #A93226;
 }
 
-b::selection {
-  color: white;
-  background: #A93226;
-}
-.credits::selection {
-  color: white;
-  background: #A93226
-}
-
 .icon::selection {
   background: #A93226;
 }
@@ -131,6 +119,14 @@ button:active {
   background-color: #860707;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+li:hover {
+  background-color: #2C2F33;
+}
+
+.active:hover {
+  background-color: #275edc;
 }
 
 input {
