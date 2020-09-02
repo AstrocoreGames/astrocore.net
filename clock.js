@@ -1,5 +1,5 @@
-function clock() {
-  //Date
+//Date
+function calendar() {
   var d = new Date();
   var day = d.getDate();
   var year = d.getFullYear();
@@ -9,13 +9,14 @@ function clock() {
   if (day < 10) {
     day = `0${day}`;
   }
-  //Needs to be changed to be less jank
-  if (year => 2000) {
-    year = year - 2000;
-  }
+  
   //Changes the html element to display the date
   date.innerHTML = `${days[weekday]} ${month}-${day}-${year}`;
-  //Time
+  setInterval(clock, 60000);
+}
+
+//Time
+function clock() {
   var t = new Date;
   var hour = t.getHours();
   var minute = t.getMinutes();
@@ -37,5 +38,7 @@ function clock() {
   //Check to see if the time has changed every 50 milliseconds
   setInterval(clock, 50);
 }
+//Calls the calendar function
+calendar();
 //Calls the clock function
 clock();
