@@ -111,11 +111,9 @@ li::selection {
 /*Button effects*/
 button:hover {
   background-color: #A93226;
-  color: #FFFFFF;
 }
 
 button:active {
-  background-color: #860707;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
