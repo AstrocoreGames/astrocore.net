@@ -4,7 +4,10 @@ var enemy
 var score
 
 function setup() {
+    //Create Vanvas
     createCanvas(windowWidth, windowHeight)
+
+    //Create Elements
     ball = new Ball()
     player = new Player()
     enemy = new Enemy()
@@ -12,15 +15,21 @@ function setup() {
 }
 
 function draw() {
+    //Draw Background
     background(220);
+
+    //Update Elements
     ball.update()
     enemy.update()
     player.update()
     score.update()
 
+    //Up arrow or W pressed
     if (keyIsDown(38) || keyIsDown(87)) {
         player.up()
     }
+
+    //Down Arrow or S pressed
     if (keyIsDown(40) || keyIsDown(83)) {
         player.down()
     }
@@ -53,6 +62,7 @@ function draw() {
     }
 }
 
+//Resize Elements when Window is Resized
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight)
     enemy.resize()
