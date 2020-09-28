@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Ads-->
     <script data-ad-client="ca-pub-4341684157310859" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta charset="UTF-8">
-    <title>Password Generator</title>
+    <title>Todo</title>
     <link href="../../style.css" type="text/css" rel="stylesheet" />
     <link rel="icon" href="/Images/astrocore.png">
 </head>
@@ -17,20 +16,11 @@
     <img class="icon" onclick="window.location.href='../../Other/Discord/'" src="../../Images/discord.png">
     <img class="icon" onclick="window.location.href='../../Other/Youtube/'" src="../../Images/youtube.png">
 </ul>
-<div class="Form">
-    <div class="slidecontainer">
-        <p id="LengthLabel"></p>
-        <input type="range" min="1" max="75" value="16" class="slider" id="LengthSlider">
-        <br/>
-        <input type="checkbox" class="checkbox" checked id="Uppercase"><p>Uppercase</p>
-        <input type="checkbox" class="checkbox" checked id="Lowercase"><p>Lowercase</p>
-        <input type="checkbox" class="checkbox" checked id="Numbers"><p>Numbers</p>
-        <input type="checkbox" class="checkbox" checked id="Symbols"><p>Symbols</p>
-        <input type="checkbox" class="checkbox" checked id="Ambiguous"><p>Ambiguous</p>
+    <div style="text-align: center;">
+        <input id="txt" placeholder="Todo">
+        <button onclick="CreateTodo()">Ok</button>
     </div>
-    <button onclick="Generate()">Generate</button>
-    <p id="Password"></p>
-</div>
-<script src="script.js"></script>
+    <div id="List" style="text-align: center;"></div>
+    <script src="script.js"></script>
 </body>
 </html>
