@@ -70,12 +70,12 @@ function rebirth() {
     rebirthCost = 100000000;
     score = 0;
     clickLevel = 1;
-    upgradeCost = 1000;
-    coderCost = 3000;
-    superUpgradeCost = 5000;
+    upgradeCost = 50;
+    coderCost = 1000;
+    superUpgradeCost = 750;
     coders = 0;
     coderLevel = 1;
-    coderUpgradeCost = 5000;
+    coderUpgradeCost = 1250;
     refreshHTML()
   }
 }
