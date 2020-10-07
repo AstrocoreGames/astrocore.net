@@ -1,11 +1,5 @@
 "use strict";
 
-// WARNING: Please don't put any UNPREDICTABLE VALUES
-// AND Don't OMIT variables
-// AND Don't RENAME any variable/property.
-// BECAUSE all of these can cause the game to get CORRUPTED :))))
-// (LOL)
-
 var CONFIG = {
   table: {
     // Size in cells
