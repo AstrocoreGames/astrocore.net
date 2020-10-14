@@ -2,7 +2,7 @@ function CreateTodo() {
     let Todo = document.createElement("div")
     Todo.class = "TodoDiv"
     let Txt = document.createElement("p")
-    Txt.innerText = document.getElementById("txt").value
+    Txt.innerHTML = document.getElementById("txt").value
     Todo.appendChild(Txt)
     let Button = document.createElement("button")
     Button.innerHTML = "Delete"
