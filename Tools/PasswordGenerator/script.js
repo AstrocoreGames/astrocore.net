@@ -2,10 +2,10 @@ const LengthSlider = document.getElementById("LengthSlider")
 const LengthLabel = document.getElementById("LengthLabel")
 const PasswordLabel = document.getElementById("Password")
 
-LengthLabel.innerHTML = "Length: " + LengthSlider.value
+LengthLabel.innerText = "Length: " + LengthSlider.value
 
 LengthSlider.oninput = function() {
-    LengthLabel.innerHTML = "Length: " + this.value
+    LengthLabel.innerText = "Length: " + this.value
 }
 
 function GeneratePassword() {
