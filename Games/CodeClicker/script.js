@@ -69,7 +69,6 @@ function buyClicker() {
     data.score = data.score - data.coderCost
     data.coderCost = data.coderCost +200;
     refreshHTML()
-    gameLoop()
   }
 }
 
@@ -121,5 +120,6 @@ function refreshHTML() {
 function gameLoop() {
   data.score = data.score + data.coders * data.coderLevel * data.rebirths;
   refreshHTML()
-  setTimeout(gameLoop, 1000)
 }
+
+setInterval(gameLoop, 1000)
