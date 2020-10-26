@@ -23,15 +23,14 @@ function clock() {
   var am = "AM"
   if (hour > 12) {
     am = "PM"
-  }
-  if (hour > 12) {
     hour = hour - 12;
   }
   if (minute < 10) {
     minute = `0${minute}`;
   }
-  if (second < 10)
+  if (second < 10) {
     second = `0${second}`;
+  }
   //Changes the html element time to display the time
   time.innerHTML = `${hour}:${minute}:${second} ${am}`;
 }
