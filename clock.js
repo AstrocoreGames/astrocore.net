@@ -12,12 +12,11 @@ function calendar() {
   
   //Changes the html element to display the date
   date.innerHTML = `${days[weekday]} ${month}-${day}-${year}`;
-  setInterval(clock, 60000);
 }
 
 //Time
 function clock() {
-  var t = new Date;
+  var t = new Date();
   var hour = t.getHours();
   var minute = t.getMinutes();
   var second = t.getSeconds();
@@ -35,10 +34,10 @@ function clock() {
     second = `0${second}`;
   //Changes the html element time to display the time
   time.innerHTML = `${hour}:${minute}:${second} ${am}`;
-  //Check to see if the time has changed every 50 milliseconds
-  setInterval(clock, 50);
 }
 //Calls the calendar function
-calendar();
+calendar()
+setInterval(calendar, 60000);
 //Calls the clock function
-clock();
+clock()
+setInterval(clock, 50);
