@@ -4,7 +4,7 @@ var enemy
 var score
 
 function setup() {
-    //Create Vanvas
+    //Create Canvas
     createCanvas(windowWidth, windowHeight)
 
     //Create Elements

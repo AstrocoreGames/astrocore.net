@@ -3,7 +3,7 @@ let rez = 20;
 let food;
 let w;
 let h;
-let cropping = 10;
+let cropping = 5;
 
 function setup() {
   window.canvas = createCanvas(window.innerWidth - cropping, window.innerHeight - cropping);
@@ -38,11 +38,11 @@ function keyPressed() {
 }
 
 function resetGame() {
-    location.reload();
+  location.reload();
 }
 
 function draw() {
-    ellipse(width/2,height/2,100,100);
+  ellipse(width/2,height/2,100,100);
   scale(rez);
   background(0);
   if (snake.eat(food)) {
@@ -56,7 +56,7 @@ function draw() {
     print("END GAME");
     background(255, 0, 0);
     noLoop();
-    setTimeout(resetGame, 1000)
+    resetGame()
   }
 
   noStroke();
