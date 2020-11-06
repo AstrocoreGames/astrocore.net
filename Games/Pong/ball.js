@@ -20,24 +20,18 @@ class Ball {
     reset() {
         this.x = windowWidth / 2
         this.y = windowHeight / 2
+        this.xvel = this.speed
     }
 
     //Bounces X of Ball
     bouncex() {
-        if (this.xvel === this.speed) {
-            this.xvel = -this.speed
-        } else {
-            this.xvel = this.speed
-        }
+        this.xvel = -this.xvel
+        this.xvel = this.xvel + windowWidth / 1000
     }
 
     //Bounces Y of Ball
     bouncey() {
-        if (this.yvel === this.speed) {
-            this.yvel = -this.speed
-        } else {
-            this.yvel = this.speed
-        }
+        this.yvel = -this.yvel
     }
 
     //Resizes Element

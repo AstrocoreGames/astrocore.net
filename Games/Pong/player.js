@@ -5,7 +5,7 @@ class Player {
         this.y = windowHeight / 2
         this.width = windowWidth / 40
         this.height = windowHeight / 5
-        this.speed = windowWidth / 500
+        this.speed = windowWidth / 100
     }
 
     update() {

@@ -34,6 +34,19 @@ function draw() {
         player.down()
     }
 
+    //Totally not an autoplayer :D
+    if (keyIsDown(187)) {
+      //Ball Above Player
+      if (ball.y + ball.size/2 < player.y + player.height/2) {
+        player.up()
+      }
+
+      //Ball Below Player
+      if (ball.y + ball.size/2 > player.y + player.height/2) {
+        player.down()
+      }
+    }
+
     //Player and Ball Collision
     if (ball.x + ball.size >= player.x && ball.x <= player.x + player.width && ball.y >= player.y && ball.y <= player.y + player.height && ball.xvel == ball.speed) {
         ball.bouncex()
