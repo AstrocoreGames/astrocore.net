@@ -5,11 +5,19 @@ function calendar() {
   var year = d.getFullYear();
   var month = d.getMonth() + 1;
   var weekday = d.getDay();
-  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   if (day < 10) {
     day = `0${day}`;
   }
-  
+
   //Changes the html element to display the date
   date.innerHTML = `${days[weekday]} ${month}-${day}-${year}`;
 }
@@ -20,9 +28,9 @@ function clock() {
   var hour = t.getHours();
   var minute = t.getMinutes();
   var second = t.getSeconds();
-  var am = "AM"
+  var am = "AM";
   if (hour > 12) {
-    am = "PM"
+    am = "PM";
     hour = hour - 12;
   }
   if (minute < 10) {
@@ -35,8 +43,8 @@ function clock() {
   time.innerHTML = `${hour}:${minute}:${second} ${am}`;
 }
 //Calls the calendar function
-calendar()
+calendar();
 setInterval(calendar, 60000);
 //Calls the clock function
-clock()
+clock();
 setInterval(clock, 50);
