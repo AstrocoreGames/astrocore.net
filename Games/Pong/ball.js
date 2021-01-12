@@ -40,5 +40,7 @@ class Ball {
         this.y = windowHeight / 2
         this.size = windowHeight / 20
         this.speed = windowWidth / 500
+        this.xvel = this.speed
+        this.yvel = this.speed
     }
 }

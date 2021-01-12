@@ -81,5 +81,5 @@ function windowResized() {
     enemy.resize()
     score.resize()
     player.resize()
-
+    ball.resize()
 }
